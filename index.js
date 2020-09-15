@@ -1,8 +1,18 @@
 'use strict';
 
-for (let i = 1; i <= 10; i++) {
-  if (i % 3 === 0) {
-    continue;
-  }
-  console.log(i);
+function showAd() {
+  console.log('========');
+  console.log('===Ad===');
+  console.log('========');
 }
+
+showAd();
+console.log('A');
+console.log('A');
+console.log('A');
+console.log('A');
+showAd();
+console.log('A');
+console.log('A');
+console.log('A');
+console.log('A');
