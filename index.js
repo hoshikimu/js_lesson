@@ -1,13 +1,5 @@
 'use strict';
 
-// console.log(150 * 140);
-// console.log(150 * 160);
+// console.log(parseInt('5', 10) + 3);
 
-let price = 500;
-
-price += 100; //600
-price *= 2; 
-price++;
-price--;
-
-console.log(price);
+console.log(parseInt('hello', 10));
