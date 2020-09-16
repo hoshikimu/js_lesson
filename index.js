@@ -1,25 +1,22 @@
 'use strict';
 
 {
+  class Post {
+    constructor(text) {
+      this.text = text;
+      this.likeCount = 0;
+    }
+
+    show() {
+      console.log(`${this.text} - ${this.likeCount}いいね`);
+    }
+  }
+
   const posts = [
-    {
-      text: 'aaaa',
-      likeCount: 0,
-      // show: function() {
-      //   console.log(`${this.text} - ${this.likeCount}いいね`);
-      // }
-      show() {
-        console.log(`${this.text} - ${this.likeCount}いいね`);
-      }
-    },
-    {
-      text: 'bbbb',
-      likeCount: 0,
-      show() {
-        console.log(`${this.text} - ${this.likeCount}いいね`);
-      }
-    },
+    new Post('aaaa'),
+    new Post('bbbb'),
   ];
 
+  posts[0].show();
   posts[1].show();
 }
