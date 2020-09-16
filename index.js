@@ -1,11 +1,15 @@
 'use strict';
 
 {
-  // alert('hello');
-  const answer = confirm('削除しますか？');
-  if (answer) {
-    console.log('削除しました');
-  } else {
-    console.log('キャンセルしました');
+  let i = 0;
+
+  function showTime() {
+    console.log(new Date());
+    i++;
+    if (i > 2) {
+      clearInterval(intervalId);
+    }
   }
+
+  const intervalId = setInterval(showTime, 1000);
 }
