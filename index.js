@@ -1,22 +1,10 @@
 'use strict';
 
-// function sum(a, b, c) {
-//   return a + b + c;
-// }
+{
+//   const score = 80;
+//   const score = 90;
+//   const score = 40;
 
-// const sum = function(a, b, c) {
-//   return a + b + c;
-// };
-
-// const sum = (a, b, c) => a + b + c;
-
-
-// const total = sum(1, 2, 3) + sum(3, 4, 5);
-// console.log(total);
-
-// const double = function(a) {
-//   return a * 2;
-// };
-
-const double = a => a * 2;
-console.log(double(12));
+  const scores = [80, 90, 40];
+  console.log(scores);
+}
