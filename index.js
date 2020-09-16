@@ -1,15 +1,13 @@
 'use strict';
 
 {
-  let i = 0;
-
-  function showTime() {
-    console.log(new Date());
-    i++;
-    if (i > 2) {
-      clearInterval(intervalId);
-    }
+  // const name = 'taguchi';
+  const name = 5;
+  try {
+    console.log(name.toUpperCase());
+  } catch (e) {
+    console.log(e);
   }
 
-  const intervalId = setInterval(showTime, 1000);
+  console.log('finish');
 }
