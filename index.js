@@ -1,13 +1,20 @@
 'use strict';
 
 {
-  // const name = 'taguchi';
-  const name = 5;
-  try {
-    console.log(name.toUpperCase());
-  } catch (e) {
-    console.log(e);
+  const posts = [
+    {
+      text: 'aaaa',
+      likeCount: 0,
+    },
+    {
+      text: 'bbbb',
+      likeCount: 0,
+    },
+  ];
+
+  function show(post) {
+    console.log(`${post.text} - ${post.likeCount}いいね`)
   }
 
-  console.log('finish');
+  show(posts[0]);
 }
