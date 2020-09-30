@@ -1,7 +1,16 @@
-li {
-  cursor: pointer;
+body {
+  background: #efefef;
 }
 
-.done {
-  text-decoration: line-through;
+#btn {
+  width: 200px;
+  height: 200px;
+  background: #ef454a;
+  border-radius: 50%;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 200px;
+  color: white;
+  font-weight: bold;
+  font-size: 42px;
 }
