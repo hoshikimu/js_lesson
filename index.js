@@ -1,9 +1,9 @@
 'use strict';
 
 {
-  document.querySelector('ul').addEventListener('click', e => {
-    if (e.target.nodeName === 'LI') {
-      e.target.classList.toggle('done');
-    }　
+  const btn = document.getElementById('btn');
+
+  btn.addEventListener('click', () => {
+    btn.textContent = 'hit!';
   });
 }
