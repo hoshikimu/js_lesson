@@ -32,12 +32,14 @@
   }
   console.table(bingo);
 
-  const tr = document.createElement('tr');
-  for (let col = 0; col < 5; col++) {
-    const td = document.createElement('td');
-    td.textContent = bingo[0][col];
-    tr.appendChild(td);
-  }
+  for (let row = 0; row < 5; row++) {
+    const tr = document.createElement('tr');
+    for (let col = 0; col < 5; col++) {
+      const td = document.createElement('td');
+      td.textContent = bingo[row][col];
+      tr.appendChild(td);
+    }
 
-  document.querySelector('tbody').appendChild(tr);
+    document.querySelector('tbody').appendChild(tr)
+  }
 }
