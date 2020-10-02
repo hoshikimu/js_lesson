@@ -18,7 +18,7 @@ console.clear();
       });
     }
 
-    console.log(dates);
+    return dates;
   }
 
   function getCalendarBody() {
@@ -33,23 +33,33 @@ console.clear();
       });
     }
 
-    console.log(dates);
+    return dates;
   }
 
   function getCalendarTail() {
-    const date = [];
+    const dates = [];
     const lastDay = new Date(year, month + 1, 0).getDay();
 
     for (let i = 1; i < 7 - lastDay; i++) {
-      date.push({
+      dates.push({
         date: i,
         isToday: false,
         isDisabled: true,
       });
     }
 
-    console.log(date);
+    return dates;
   }
 
-  getCalendarTail();
+  function createCalendar() {
+    const dates = [
+      ...getCalendarHead(),
+      ...getCalendarBody(),
+      ...getCalendarTail(),
+    ];
+
+    console.log(dates);
+  }
+
+  createCalendar();
 }
