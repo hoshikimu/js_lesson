@@ -27,7 +27,7 @@ console.clear();
 
     for (let i = 1; i <= lastDate; i++) {
       dates.push({
-        date: 1,
+        date: i,
         isToday: false,
         isDisabled: false,
       });
@@ -57,13 +57,15 @@ console.clear();
       ...getCalendarBody(),
       ...getCalendarTail(),
     ];
+    const weeks = [];
+    const weeksCount = dates.length / 7;
 
-    console.log(dates);
+    for (let i = 0; i < weeksCount; i++) {
+      weeks.push(dates.splice(0, 7));
+    }
+
+    console.log(weeks);
   }
 
   createCalendar();
-}
-
-{
-  
 }
