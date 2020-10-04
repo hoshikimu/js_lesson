@@ -1,8 +1,9 @@
 'use strict';
 
 {
-  let year = 2020;
-  let month = 4;
+  const today = new Date();
+  let year = today.getFullYear();
+  let month = today.getMonth();
 
   function getCalendarHead() {
     const dates = [];
@@ -30,6 +31,10 @@
         isToday: false,
         isDisabled: false,
       });
+    }
+
+    if (year === today.getFullYear() && month === today.getMonth()) {
+      dates[today.getDate() - 1].isToday = true;
     }
 
     return dates;
