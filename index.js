@@ -126,5 +126,12 @@
     createCalendar();
   });
 
+  document.getElementById('today').addEventListener('click', () => {
+    year = today.getFullYear();
+    month = today.getMonth();
+    
+    createCalendar();
+  });
+
   createCalendar();
 }
