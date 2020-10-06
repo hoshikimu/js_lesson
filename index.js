@@ -4,6 +4,8 @@
   const question = document.getElementById('question');
   const choises = document.getElementById('choises');
   const btn = document.getElementById('btn');
+  const result = document.getElementById('result');
+  const socoreLabel = document.querySelector('#result > p')
 
   const quizSet = [
     {q: 'What is A?', c: ['A0', 'A1', 'A2']},
@@ -69,7 +71,8 @@
     btn.classList.add('disabled');
 
     if (currentNum === quizSet.length - 1) {
-      console.log(`Score: ${score} / ${quizSet.length}`)
+      socoreLabel.textContent = `Score: ${score} / ${quizSet.length}`;
+      result.classList.remove('hidden');
     } else {
       currentNum++;
       setQuiz();
