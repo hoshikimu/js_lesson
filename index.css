@@ -42,11 +42,19 @@ body {
   font-weight: bold;
 }
 
+#choises > li.correct::after {
+  content: '... correct!';
+}
+
 #choises > li.wrong {
   background: #f8d8da;
   border-color: #f5c6cb;
   color: #721c34;
   font-weight: bold;
+}
+
+#choises > li.wrong::after {
+  content: '... wrong!';
 }
 
 #btn {
