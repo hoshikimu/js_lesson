@@ -75,6 +75,14 @@
       btn.addEventListener('click', () => {
         this.start();
       });
+      this.setUp();
+    }
+
+    setUp() {
+      const container = document.getElementById('container');
+      const PANEL_WIDTH = 50;
+      const BOARD_PADDING = 10;
+      container.style.width = PANEL_WIDTH * this.level + BOARD_PADDING * 2 + 'px';
     }
 
     start() {
@@ -115,5 +123,5 @@
     }
   }
 
-  new Game(2);
+  new Game(5);
 }
